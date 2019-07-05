@@ -1,0 +1,8 @@
+>>> name = "donald"
+>>> lname = "trumph"
+>>> name + lname
+'donaldtrumph'
+>>> name + ' ' + lname
+'donald trumph'
+>>> len(name + ' ' + lname)
+13
