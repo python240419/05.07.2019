@@ -17,3 +17,9 @@ def doesKeyExist(d, k):
     #return True;
 
 myDict = { 1 : 'moshe', 2: 'erez', 3: 'dana' }
+
+if doesKeyExist(myDict, 3) == False:
+    myDict[3] = 'anat'
+
+if doesKeyExist(myDict, 4) == False:
+    myDict[3] = 'rona'
