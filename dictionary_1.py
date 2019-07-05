@@ -11,10 +11,21 @@ def doesKeyExist(d, k):
     :param k: key
     :return: True if k exist in d
     '''
-    #
-    #
-    #d.keys()
-    #return True;
+    # return k in d.keys() -- shorter
+    if k in d.keys():
+        return True
+    else:
+        return False
+
+def tryAddValue(d, k, v):
+    '''
+    add [k,v] to dictionary if k does not exist
+    :param d: dictionary
+    :param k: key
+    :param v: value
+    :return: True if [k,v] was added , False if not
+    '''
+    pass
 
 myDict = { 1 : 'moshe', 2: 'erez', 3: 'dana' }
 
@@ -26,8 +37,10 @@ myDict = { 1 : 'moshe', 2: 'erez', 3: 'dana' }
 # list(myDict.keys())
 
 
-if doesKeyExist(myDict, 3) == False:
-    myDict[3] = 'anat'
+if doesKeyExist(myDict, 5) == False:
+    myDict[5] = 'anat'
 
 if doesKeyExist(myDict, 4) == False:
     myDict[4] = 'rona'
+
+print(myDict)
