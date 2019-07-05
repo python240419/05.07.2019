@@ -1,4 +1,3 @@
-
 # Dictionary
 # Hashmap -- key : value
 # key may appear only once - single appearence
@@ -15,14 +14,11 @@
 # [1,2,3]  #adress 4005
 # [1,2,3]
 
-#<id>3 <name> itay </name> </id> # XML
-#{ key : value, key : value }
-a = {'a' : 'b', 'c' : { 'd' : 'e' }}
 # create dictionary for cities population
 # TLV, LONDON, PARIS, TOKYO
 # input city name -- print population
 
+popMap = { 'TEL AVIV' : 443939, 'LONDON' : 8825000, 'PARIS' : 0,'TOKYO' : 13929286}
 
-
-
-
+cityName = input("Please enter a city name: ")
+print(f'{cityName} population is: {popMap[cityName.upper()]}')
