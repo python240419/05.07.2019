@@ -18,6 +18,14 @@ def doesKeyExist(d, k):
 
 myDict = { 1 : 'moshe', 2: 'erez', 3: 'dana' }
 
+
+# print value of key: myDict[1]
+# add/replace value of key: myDict[5] = 'sharon'
+# add/replace value of key: myDict[79] = 'danny'
+# list(myDict.values())
+# list(myDict.keys())
+
+
 if doesKeyExist(myDict, 3) == False:
     myDict[3] = 'anat'
 
