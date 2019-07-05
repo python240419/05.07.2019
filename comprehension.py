@@ -47,8 +47,8 @@ numbers = [2, 6, 10, 200, -20, 3]
 l2 = [x for x in range(0, 10, 2) if x % 2 == 0]
 print(l2)
 
-# create list of numbers sqr 2, 4, 9, 16, 25, 36 ... 1-20 
-
+# create list of numbers sqr 1, 2, 4, 9, 16, 25, 36 ... 1-20
+# create list of numbers between 1-100 which can divide by 3 or 5 or 7 without reminder
 
 
 
