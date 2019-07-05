@@ -19,13 +19,27 @@ def doesKeyExist(d, k):
 
 def tryAddValue(d, k, v):
     '''
-    add [k,v] to dictionary if k does not exist
+    add [k,v] to dictionary if k does not exist in dictionary
     :param d: dictionary
     :param k: key
     :param v: value
     :return: True if [k,v] was added , False if not
     '''
-    pass
+    if doesKeyExist(d, k) == False:
+        d [ k ] = v
+        return True
+    else:
+        return False
+
+def printDictionary(d):
+    '''
+    nice print of the d dictionary
+    :param d: dictionary
+    :return: None
+    '''
+    #a, b = input("enter 2 numbers")
+    for k, v in d.items():
+        print(f'Dictionary key : {k} = {v}')
 
 myDict = { 1 : 'moshe', 2: 'erez', 3: 'dana' }
 
@@ -43,4 +57,11 @@ if doesKeyExist(myDict, 5) == False:
 if doesKeyExist(myDict, 4) == False:
     myDict[4] = 'rona'
 
+if tryAddValue(myDict, 7, 'Rozner'):
+    print('Rozner added successfully')
+else:
+    print('Rozner was NOT added ')
+
 print(myDict)
+
+printDictionary(myDict)
