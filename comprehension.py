@@ -40,6 +40,20 @@ for i in range(len(matrix)):
     rows = [oneList[i] for oneList in matrix if i < len(oneList)]
     print(rows)
 
+l1 = list(range(10))
+print(l1)
+
+numbers = [2, 6, 10, 200, -20, 3]
+l2 = [x for x in range(0, 10, 2) if x % 2 == 0]
+print(l2)
+
+# create list of numbers sqr 2, 4, 9, 16, 25, 36 ... 1-20 
+
+
+
+
+
+
 
 
 
