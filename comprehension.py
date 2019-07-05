@@ -1,4 +1,4 @@
-
+import random
 # list comprehension
 
 # [ <expression> for <arg> in <list> if <condition> ]
@@ -48,8 +48,19 @@ l2 = [x for x in range(0, 10, 2) if x % 2 == 0]
 print(l2)
 
 # create list of numbers sqr 1, 2, 4, 9, 16, 25, 36 ... 1-20
+numSqr = [x ** 2 for x in range(1, 21)]
+
 # create list of numbers between 1-100 which can divide by 3 or 5 or 7 without reminder
+#    x % 3 == 0 or x % 5 == 0 or x % 7 == 0
+num100 = [x for x in range(1, 101) if x % 3 == 0 or x % 5 == 0 or x % 7 == 0]
+
 # [5.9, 0.9, -9.2, 10.1] => [5, 0, -9, 10]
+toInt = [int(number) for number in [5.9, 0.9, -9.2, 10.1]]
+
+# create a list of 10 random numbers (random 1-100)
+randoms = [random.randint(1, 100) for x in range(100)]
+print(randoms)
+print(len(randoms))
 
 
 
