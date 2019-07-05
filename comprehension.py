@@ -49,6 +49,7 @@ print(l2)
 
 # create list of numbers sqr 1, 2, 4, 9, 16, 25, 36 ... 1-20
 # create list of numbers between 1-100 which can divide by 3 or 5 or 7 without reminder
+# [5.9, 0.9, -9.2, 10.1] => [5, 0, -9, 10]
 
 
 
